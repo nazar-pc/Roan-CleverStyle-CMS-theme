@@ -29,7 +29,7 @@ nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
 /*end reset*/
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {display: block;}
 body {line-height: 1;}
 ol, ul {list-style: none;}
@@ -49,6 +49,7 @@ body {
 }
 .header{
 	background:url(../images/bg.jpg);
+	background-size: cover;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -154,7 +155,7 @@ header h6{
 	top: 17px;
 	right: 47px;
 	text-indent: -9999px;
-	
+
 	display: none;
 }
 
@@ -203,7 +204,7 @@ header h6{
 	float:left;
 	margin-left: 1.2em;
 }
-.social_icons ul .in a span 
+.social_icons ul .in a span
 {
 	background-position: 0px 0px ;
 }
@@ -211,7 +212,7 @@ header h6{
 {
 	background-position: 0px -24px ;
 }
-.social_icons ul .pro a span 
+.social_icons ul .pro a span
 {
 	background-position: -28px 0px ;
 }
@@ -380,6 +381,7 @@ header h6{
 .clients
 {
 	background-image: url(../images/bg1.jpg);
+	background-size: cover;
 }
 .clients h3 {
 	color: #FFF;
@@ -561,7 +563,7 @@ header h6{
 /******pop_up***********/
 /*********pop_up_protfolio*****/
 /* Magnific Popup CSS */
-.mfp-bg {	
+.mfp-bg {
    top: 0;
    left: 0;
    width: 100%;
@@ -581,7 +583,7 @@ header h6{
    z-index: 1043;
    position: fixed;
    outline: none !important;
-   -webkit-backface-visibility: hidden; 
+   -webkit-backface-visibility: hidden;
  }
 .mfp-hide {
   display: none !important;
@@ -610,7 +612,7 @@ button::-moz-focus-inner {
    text-align: center;
    opacity: 0.65;
    font-style: normal;
-   font-size: 28px; 
+   font-size: 28px;
    outline:none;
   background:url(../images/icon.png) no-repeat -71px -94px;
 }
@@ -681,9 +683,9 @@ button::-moz-focus-inner {
 **************************Portfolio*************************
 ============================================================ */
 .typo1 {
-	position:relative; 
-	width:100%; 
-	height:100%; 
+	position:relative;
+	width:100%;
+	height:100%;
 	padding:4em 0 0;
 }
 .portfolio-bg {
@@ -926,6 +928,7 @@ button::-moz-focus-inner {
 .contact-bg
 {
 	background:#F0F0F0 url(../images/slider2.jpg) no-repeat;
+	background-size: cover;
 	margin-top: 3.5em;
 	padding-bottom: 4em;
 }
@@ -933,8 +936,10 @@ button::-moz-focus-inner {
 {
 	padding: 10em 0em;
 }
-.tool_tip a 
+.tool_tip a
 {
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
 	display: block;
 	background: #FFF;
 	padding: 1em 3em;
@@ -987,6 +992,7 @@ button::-moz-focus-inner {
 	padding-bottom:10px;
 }
 .contact-form input[type="text"],.contact-form textarea{
+	border-radius: 0;
 	padding:8px;
 	display:block;
 	width:90%;
@@ -1001,7 +1007,7 @@ button::-moz-focus-inner {
 }
 .contact-form textarea{
 	resize:none;
-	height:120px;		
+	height:120px;
 }
 .contact-form input[type="submit"]{
 	cursor:pointer;
@@ -1088,12 +1094,12 @@ button::-moz-focus-inner {
 }
 /*****end-team*********/
 /*****responsive******/
-@media screen and (max-width: 1440px) 
+@media screen and (max-width: 1440px)
 {
 	.carousel {
 		 margin: 0em;
 	}
-	
+
 }
 @media screen and (max-width: 1366px)
 {
@@ -1102,7 +1108,7 @@ button::-moz-focus-inner {
 	}
 	.about h2 {
 	font-size: 3em;
-	} 
+	}
 	.sub_grid span {
 	font-size: 3.2em;
 	}
@@ -1116,7 +1122,7 @@ button::-moz-focus-inner {
 	height: 550px !important;
 	}
 }
-@media screen and (max-width: 1280px) 
+@media screen and (max-width: 1280px)
 {
 	.wrap{
 		width:87%;
@@ -1191,11 +1197,11 @@ button::-moz-focus-inner {
 		display: inline-block;
 		z-index: 1000;
 	}
-	
+
 	.nav_wrapper.toggled {
 		height: 320px;
 	}
-	
+
 	.navigation {
 		width: 100%;
 		opacity: 0;
@@ -1203,7 +1209,7 @@ button::-moz-focus-inner {
 		background: #eee;
 		margin: 0%
 	}
-	
+
 	.navigation li {
 		float: none;
 		text-align: right;
@@ -1211,8 +1217,8 @@ button::-moz-focus-inner {
 		display: none;
 		-webkit-transition: all 0.3s;
 		-moz-transition: all 0.3s;
-		-o-transition: all 0.3s; 
-		transition: all 0.3s; 
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
 	}
 	.navigation li:hover
 	{
@@ -1235,13 +1241,13 @@ button::-moz-focus-inner {
 	.toggled .navigation {
 		opacity: 1;
 	}
-	
+
 	.toggled li {
 		display: inherit;
 	}
 
 }
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 768px)
 {
 	.wrap{
 		width:90%;
@@ -1304,7 +1310,7 @@ button::-moz-focus-inner {
 	width: 60%;
 	}
 }
-@media screen and (max-width: 640px) 
+@media screen and (max-width: 640px)
 {
 	.logo1 {
 	width: 200px;
@@ -1349,7 +1355,7 @@ button::-moz-focus-inner {
 	right: 29px;
 	}
 }
-@media screen and (max-width: 480px) 
+@media screen and (max-width: 480px)
 {
 	.about h2 {
 	font-size: 1.8em;
@@ -1400,7 +1406,7 @@ button::-moz-focus-inner {
 	width: 180px;
 	}
 }
-@media screen and (max-width: 320px) 
+@media screen and (max-width: 320px)
 {
 	.header_toggle {
 	right: 0px;
